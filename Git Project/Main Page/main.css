@@ -70,6 +70,9 @@ body, html {
     50% { border-color: black }
 }
 
+.banner h1{
+    color: rgb(0, 0, 0);
+}
 .product-gallery {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -78,6 +81,8 @@ body, html {
 }
 
 .product div {
+
+.product div{
     text-align: center;
     border: 1px solid #ccc;
     border-radius: 10px;
@@ -90,8 +95,17 @@ body, html {
 }
 
 .product2 {
+.product1{
+    width: 30%;
+    height: auto;
+    
+}
+
+.product2{
+
     width: 100%;
     height: auto;
+    
 }
 
 button {
@@ -107,6 +121,7 @@ button {
     cursor: pointer;
     border-radius: 5px;
 }
+
 
 footer {
     background-color: #333;
@@ -169,6 +184,6 @@ button:hover {
     background-color: #555;
 }
 
-.bold {
+.bold{
     color: white;
 }
