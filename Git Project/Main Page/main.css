@@ -43,6 +43,33 @@ body, html {
     color: rgb(23, 23, 23);
 }
 
+.banner h1 {
+    color: rgb(0, 0, 0);
+}
+
+/* Typewriter effect */
+#typewriter {
+    overflow: hidden;
+    border-right: .15em solid black;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .15em;
+    animation: 
+      typing 7s steps(30, end) infinite,
+      blink-caret .75s step-end infinite;
+}
+
+@keyframes typing {
+    0% { width: 0 }
+    50% { width: 100% }
+    100% { width: 0 }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: black }
+}
+
 .banner h1{
     color: rgb(0, 0, 0);
 }
@@ -53,6 +80,8 @@ body, html {
     padding: 20px;
 }
 
+.product div {
+
 .product div{
     text-align: center;
     border: 1px solid #ccc;
@@ -60,6 +89,12 @@ body, html {
     padding: 10px;
 }
 
+.product1 {
+    width: 30%;
+    height: auto;
+}
+
+.product2 {
 .product1{
     width: 30%;
     height: auto;
@@ -67,6 +102,7 @@ body, html {
 }
 
 .product2{
+
     width: 100%;
     height: auto;
     
@@ -143,7 +179,6 @@ textarea {
 textarea {
     resize: vertical;
 }
-
 
 button:hover {
     background-color: #555;

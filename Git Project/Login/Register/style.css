@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,600;0,800;0,900;1,400&display=swap');
+body{
+    font-family: poppins;
+}
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -34,7 +38,10 @@
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 10px;
-    background-color: white;
+    /* background-color: rgb(231, 231, 231); */
+    background-color: rgba(0, 0, 0, 0.37);
+    color: white;
+    
 }
 
 form {
@@ -43,7 +50,9 @@ form {
 }
 
 form h1 {
-    color: #333;
+    /* color: #333; */
+    color: white;
+    text-align: center;
 }
 
 label {
@@ -69,12 +78,17 @@ button {
     cursor: pointer;
 }
 
+button a{
+    text-decoration: none;
+    color: aliceblue;
+}
+
 form p {
     text-align: center;
 }
 
 a {
-    color: #FFD700; /* Highlight color for links */
+    color: #009dff; /* Highlight color for links */
 }
 
 footer {
