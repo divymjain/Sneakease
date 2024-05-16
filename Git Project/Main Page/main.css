@@ -1,8 +1,9 @@
 /* styles.css */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,600;0,800;0,900;1,400&display=swap');
 body, html {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
+    font-family: poppins;
 }
 
 .navbar {
@@ -36,9 +37,37 @@ body, html {
 }
 
 .banner {
-    background-color: #FFD700; /* Playful yellow */
+    background-color: #e0e0e0; /* Playful yellow */
     padding: 20px;
     text-align: center;
+    color: rgb(23, 23, 23);
+}
+
+.banner h1 {
+    color: rgb(0, 0, 0);
+}
+
+/* Typewriter effect */
+#typewriter {
+    overflow: hidden;
+    border-right: .15em solid black;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .15em;
+    animation: 
+      typing 7s steps(30, end) infinite,
+      blink-caret .75s step-end infinite;
+}
+
+@keyframes typing {
+    0% { width: 0 }
+    50% { width: 100% }
+    100% { width: 0 }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: black }
 }
 
 .product-gallery {
@@ -48,14 +77,19 @@ body, html {
     padding: 20px;
 }
 
-.product {
+.product div {
     text-align: center;
     border: 1px solid #ccc;
     border-radius: 10px;
     padding: 10px;
 }
 
-.product img {
+.product1 {
+    width: 30%;
+    height: auto;
+}
+
+.product2 {
     width: 100%;
     height: auto;
 }
@@ -93,4 +127,48 @@ footer {
     .product-gallery {
         grid-template-columns: 1fr;
     }
+}
+
+.container {
+    width: 50%;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+.bold {
+    color: white;
 }
